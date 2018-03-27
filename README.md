@@ -2,7 +2,7 @@
 
 ## Kubernetes-Dashboard (./dashboard)
 
-In ./dashboard folder there will be placed the current recommended Kubernetes dashboard files with additional notes to get quickly started.
+The `./dashboard` folder contains all recommended files to run Kubernetes dashboard on Cloud Container Engine. The following advices guide your through all necessary steps to get started quickly.
 
 ### Prerequisits
 
@@ -50,11 +50,11 @@ spec:
 kubectl get svc  kubernetes-dashboard -n kube-system
 ```  
 ```
-NAME                   TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)         AGE
-kubernetes-dashboard   NodePort   <Cluster-IP>   <none>        443:<NodePort>/TCP   37m
+NAME                   TYPE       CLUSTER-IP	EXTERNAL-IP		PORT(S)				AGE
+kubernetes-dashboard   NodePort   <Cluster-IP>	<none>			443:<NodePort>/TCP	37m
 ```
 
-* Accessing the kubernetes-dashboard is now available from `https://<CCE-node-EIP>:<NodePort>.
+* Accessing the kubernetes-dashboard is now available from `https://<CCE-node-EIP>:<NodePort>`.
 * For generating a login-Token for admin user account via kubectl, use the following commands:
 
 ```
