@@ -15,14 +15,14 @@ The `./dashboard` folder contains all recommended files to run Kubernetes dashbo
 * Create Kubernetes Dashboard
 
 ```
-kubctl create -f kubernetes-dashboard.yaml
+kubectl create -f kubernetes-dashboard.yaml
 ```
 
 * Create (Administrator) user account and add the cluster role binding for accessing Kubernetes dashboard.
 
 ```
-kubctl create -f admin-user.yaml
-kubctl create -f admin-user-role.yaml
+kubectl create -f admin-user.yaml
+kubectl create -f admin-user-role.yaml
 ```
 
 * Expose the dashboard (e.g. NodePort) and make it available from outside. Change the `type: ClusterIP` to `type: NodePort` 
